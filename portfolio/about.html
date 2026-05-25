@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About │ Darpan Simhadri Portfolio</title>
+  <meta name="description" content="Learn about Darpan Simhadri — a Computer Science Engineering student passionate about accessible web design, semantic HTML5 and modern JavaScript.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="About │ Darpan Simhadri Portfolio">
+  <meta property="og:description" content="Background, education and goals of Darpan Simhadri.">
+  <meta property="og:type" content="website">
+  
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('theme');
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,400;0,500;0,700;1,400&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Skip to main content -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ── HEADER ─────────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Darpan Simhadri – Home">DS<span>Darpan Simhadri</span></a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Open navigation">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true" focusable="false">
+          <rect y="4"  width="22" height="2" rx="1" fill="currentColor"/>
+          <rect y="10" width="22" height="2" rx="1" fill="currentColor"/>
+          <rect y="16" width="22" height="2" rx="1" fill="currentColor"/>
+        </svg>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ── MAIN ───────────────────────────────────────────────── -->
+  <main id="main-content" tabindex="-1">
+
+    <!-- Page Hero -->
+    <div class="page-hero">
+      <div class="container">
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+          <a href="index.html">Home</a> / About
+        </nav>
+        <h1>About Me</h1>
+        <p>Computer Science Engineering student with a passion for inclusive, well-structured web experiences.</p>
+      </div>
+    </div>
+
+    <!-- Biography & Details -->
+    <section class="section" aria-labelledby="bio-heading">
+      <div class="container">
+        <div class="about-grid">
+
+          <div>
+            <h2 id="bio-heading" class="section-title">My Story</h2>
+            <p>I'm Darpan Simhadri, a Computer Science Engineering student with a strong interest in full stack web development. I enjoy solving problems, learning new technologies and building projects that create real value.</p>
+            <p>I believe in writing clean, maintainable code and building inclusive digital experiences for everyone. GREAT web design begins with semantic structure — code that means what it says and communicates clearly to both browsers and assistive technologies.</p>
+            
+            <div class="bio-details-list">
+              <div class="bio-detail-item">
+                <div class="bio-detail-icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                </div>
+                <div class="bio-detail-text">
+                  <p class="bio-detail-label">Name</p>
+                  <p class="bio-detail-val">Darpan Simhadri</p>
+                </div>
+              </div>
+
+              <div class="bio-detail-item">
+                <div class="bio-detail-icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="bio-detail-text">
+                  <p class="bio-detail-label">Email</p>
+                  <p class="bio-detail-val"><a href="mailto:darpansimhadri.edu@gmail.com">darpansimhadri.edu@gmail.com</a></p>
+                </div>
+              </div>
+
+              <div class="bio-detail-item">
+                <div class="bio-detail-icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="bio-detail-text">
+                  <p class="bio-detail-label">Location</p>
+                  <p class="bio-detail-val">Andhra Pradesh, India</p>
+                </div>
+              </div>
+
+              <div class="bio-detail-item">
+                <div class="bio-detail-icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
+                </div>
+                <div class="bio-detail-text">
+                  <p class="bio-detail-label">Education</p>
+                  <p class="bio-detail-val">B.Tech in Computer Science</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-avatar-wrapper">
+            <img src="assets/images/darpan_profile.png" alt="Portrait photo of Darpan Simhadri with warm expression">
+          </div>
+
+        </div>
+
+        <!-- Horizontal Stats Banner -->
+        <div class="stats-banner">
+          <div class="stat-item">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">2+</span>
+            <span class="stat-label">Technologies Learned</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">1+</span>
+            <span class="stat-label">Years of Learning</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Dedication</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="divider" aria-hidden="true">
+
+    <!-- Education & Timeline -->
+    <section class="section-sm" aria-labelledby="education-heading">
+      <div class="container">
+        <h2 id="education-heading" class="section-title">Education &amp; Timeline</h2>
+        <div class="timeline" role="list">
+
+          <div class="timeline-item" role="listitem">
+            <h3>B.Tech in Computer Science Engineering</h3>
+            <span>2024 – Present</span>
+            <p>Focusing on standard algorithms, data structures, and web technologies. Building accessible React applications, utilizing WCAG principles, CSS Grid/Flexbox layouts, and Git version control.</p>
+          </div>
+
+          <div class="timeline-item" role="listitem">
+            <h3>Responsive Design &amp; CSS Mastery</h3>
+            <span>2023</span>
+            <p>Completed intensive coursework focused on semantic layout schemes, media query breakpoints, high-fidelity components styling, and flexible modern grid parameters.</p>
+          </div>
+
+          <div class="timeline-item" role="listitem">
+            <h3>First Web Projects</h3>
+            <span>2022</span>
+            <p>Began designing structured HTML web pages, validating markup layouts, and experimenting with vanilla DOM operations.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" aria-hidden="true">
+
+    <!-- Goals -->
+    <section class="section-sm" aria-labelledby="goals-heading">
+      <div class="container">
+        <h2 id="goals-heading" class="section-title">Goals</h2>
+        <p style="max-width:680px; color:var(--text-muted); font-size:1.05rem; line-height:1.7;">My near-term goal is to join a development team where accessibility and performance are prioritized as core requirements, not afterthought add-ons. I want to build products that enhance digital inclusion for users utilizing assistive devices, while constantly advancing my skills in the full stack software engineering spectrum.</p>
+        <p class="mt-2">
+          <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <p class="footer-brand">DS<span>.</span> Darpan Simhadri</p>
+          <p class="footer-tagline">Computer Science Engineer</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Darpan Simhadri. All rights reserved.</p>
+        <p>Built with ❤️ using HTML5, CSS3 &amp; JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects │ Darpan Simhadri Portfolio</title>
+  <meta name="description"
+    content="Explore accessible web and software projects by Darpan Simhadri — including CampusOS, Smart Daily Expense and Habit Tracker, and Sri Venkata Padmavathi Traders Website.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Projects │ Darpan Simhadri Portfolio">
+  <meta property="og:description" content="Selected projects by Darpan Simhadri.">
+  <meta property="og:type" content="website">
+
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('theme');
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,400;0,500;0,700;1,400&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <style>
+    .project-actions {
+      display: flex;
+      gap: 0.75rem;
+      margin-top: auto;
+      padding-top: 1rem;
+    }
+
+    .project-actions .btn {
+      padding: 0.5rem 1rem;
+      font-size: 0.85rem;
+      border-radius: var(--radius-sm);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      flex: 1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Skip to main content -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ── HEADER ─────────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Darpan Simhadri – Home">DS<span>Darpan Simhadri</span></a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-controls="primary-nav" aria-expanded="false"
+        aria-label="Open navigation">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true" focusable="false">
+          <rect y="4" width="22" height="2" rx="1" fill="currentColor" />
+          <rect y="10" width="22" height="2" rx="1" fill="currentColor" />
+          <rect y="16" width="22" height="2" rx="1" fill="currentColor" />
+        </svg>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ── MAIN ───────────────────────────────────────────────── -->
+  <main id="main-content" tabindex="-1">
+
+    <div class="page-hero">
+      <div class="container">
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+          <a href="index.html">Home</a> / Projects
+        </nav>
+        <h1>My Projects</h1>
+        <p>A selection of completed work demonstrating semantic structure, accessible interfaces and modern front-end
+          techniques.</p>
+      </div>
+    </div>
+
+    <section class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 id="projects-heading" class="visually-hidden">All Projects</h2>
+
+        <div class="card-grid">
+
+          <!-- Project 1 -->
+          <article id="campusos" class="card project-card" aria-labelledby="campusos-title">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project_campusos.png" alt="CampusOS user dashboard interface screenshot">
+            </div>
+            <div class="project-body">
+              <h3 id="campusos-title">CampusOS</h3>
+              <p>A comprehensive campus management platform to streamline academic and administrative operations,
+                designed with accessibility-first standards.</p>
+              <div class="tags" aria-label="Technologies used in CampusOS">
+                <span class="tag">ReactJS</span>
+                <span class="tag">Tailwind CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/darpan-simhadri/CampusOS.git" class="btn btn-outline"
+                  aria-label="View CampusOS source code on GitHub" target="_blank" rel="noopener noreferrer">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577v-2.234c-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                  </svg>
+                  View on GitHub
+                </a>
+                <a href="https://darpan-simhadri.github.io/CampusOS/" class="btn btn-outline"
+                  aria-label="View CampusOS live demo" target="_blank" rel="noopener noreferrer">
+                  Live Demo
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article id="expense-tracker" class="card project-card" aria-labelledby="tracker-title">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project_tracker.png"
+                alt="Smart Daily Expense and Habit Tracker UI showing charts">
+            </div>
+            <div class="project-body">
+              <h3 id="tracker-title">Smart Daily Expense &amp; Habit Tracker</h3>
+              <p>A full stack web application to track daily expenses and monitor personal habits with screen-reader
+                friendly data visualisations.</p>
+              <div class="tags" aria-label="Technologies used in Expense Tracker">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/darpan-simhadri/Smart-Daily-Expensive-Tracker" class="btn btn-outline"
+                  aria-label="View Expense Tracker source code on GitHub" target="_blank" rel="noopener noreferrer">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577v-2.234c-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                  </svg>
+                  View on GitHub
+                </a>
+                <a href="https://github.com/darpan-simhadri/Smart-Daily-Expensive-Tracker" class="btn btn-outline"
+                  aria-label="View Expense Tracker live demo" target="_blank" rel="noopener noreferrer">
+                  Live Demo
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article id="svpt" class="card project-card" aria-labelledby="svpt-title">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project_traders.png"
+                alt="Sri Venkata Padmavathi Traders business catalog website screenshot">
+            </div>
+            <div class="project-body">
+              <h3 id="svpt-title">Sri Venkata Padmavathi Traders Website</h3>
+              <p>A responsive business website for a trading company to showcase products and services, scoring 100/100
+                on Lighthouse audits.</p>
+              <div class="tags" aria-label="Technologies used in SVPT Website">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">Semantic Structure</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com" class="btn btn-outline"
+                  aria-label="View Traders website source code on GitHub" target="_blank" rel="noopener noreferrer">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577v-2.234c-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                  </svg>
+                  View on GitHub
+                </a>
+                <a href="#" class="btn btn-outline" aria-label="View Traders website live demo" target="_blank"
+                  rel="noopener noreferrer">
+                  Live Demo
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <p class="footer-brand">DS<span>.</span> Darpan Simhadri</p>
+          <p class="footer-tagline">Computer Science Engineer</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Darpan Simhadri. All rights reserved.</p>
+        <p>Built with ❤️ using HTML5, CSS3 &amp; JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

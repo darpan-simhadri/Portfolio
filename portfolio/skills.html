@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skills &amp; Resume │ Darpan Simhadri Portfolio</title>
+  <meta name="description" content="Technical skills, tools and achievements of Darpan Simhadri — HTML5, CSS3, JavaScript, ReactJS, Tailwind CSS, Git and more.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Skills &amp; Resume │ Darpan Simhadri Portfolio">
+  <meta property="og:description" content="Technical skills, tools and achievements of Darpan Simhadri.">
+  <meta property="og:type" content="website">
+  
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('theme');
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,400;0,500;0,700;1,400&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Skip to main content -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ── HEADER ─────────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Darpan Simhadri – Home">DS<span>Darpan Simhadri</span></a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Open navigation">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true" focusable="false">
+          <rect y="4"  width="22" height="2" rx="1" fill="currentColor"/>
+          <rect y="10" width="22" height="2" rx="1" fill="currentColor"/>
+          <rect y="16" width="22" height="2" rx="1" fill="currentColor"/>
+        </svg>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html" aria-current="page">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ── MAIN ───────────────────────────────────────────────── -->
+  <main id="main-content" tabindex="-1">
+
+    <div class="page-hero">
+      <div class="container">
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+          <a href="index.html">Home</a> / Skills &amp; Resume
+        </nav>
+        <h1>My Skills</h1>
+        <p>Technical abilities, tools, education and achievements — evaluated at a single glance.</p>
+      </div>
+    </div>
+
+    <!-- Skills Grid Section -->
+    <section class="section" aria-labelledby="skills-section-heading">
+      <div class="container">
+        <h2 id="skills-section-heading" class="visually-hidden">Technical Skills &amp; Competencies</h2>
+        
+        <div class="skills-outer-grid">
+          
+          <!-- Left Column: Technical Skills Cards -->
+          <div>
+            <h2 class="section-title" style="margin-bottom: 2rem;">Technical Skills</h2>
+            <div class="skills-grid">
+              
+              <!-- HTML5 -->
+              <div class="skill-card">
+                <div class="skill-icon-wrap" style="background: rgba(230, 81, 0, 0.1); color: #E65100;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.9 21.2L12 24l-8.6-2.8L1.5 0zm15.4 6H7l.3 3.4h8.3l-.3 3.4-3.3 1.1-3.3-1.1-.2-2h-3.3l.4 5.4 6.4 2.1 6.4-2.1.8-9.3H17l-.1-2z"/></svg>
+                </div>
+                <span class="skill-name">HTML5</span>
+              </div>
+
+              <!-- CSS3 -->
+              <div class="skill-card">
+                <div class="skill-icon-wrap" style="background: rgba(2, 119, 189, 0.1); color: #0277BD;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.9 21.2L12 24l-8.6-2.8L1.5 0zm16.9 5.5H5.6l.3 3.3h10.9l-.3 3.3-4.5 1.5-4.5-1.5-.3-3.3H3.9l.6 6.6 7.5 2.5 7.5-2.5 1-10.1z"/></svg>
+                </div>
+                <span class="skill-name">CSS3</span>
+              </div>
+
+              <!-- JavaScript -->
+              <div class="skill-card">
+                <div class="skill-icon-wrap" style="background: rgba(255, 214, 0, 0.1); color: #F5B041;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0V0zm20.8 17.8c-.8-.5-1.6-1-2.4-1-.8 0-1.2.4-1.2.9 0 .5.3.8 1.1 1.1 1.7.7 2.9 1.4 2.9 3.5 0 2-1.6 3.7-4.4 3.7-2.6 0-4-1.2-4.8-2.6l2.3-1.4c.5.9 1.2 1.5 2.3 1.5 1.1 0 1.6-.5 1.6-1.1 0-.6-.5-.9-1.4-1.3-1.8-.7-3.1-1.6-3.1-3.6 0-1.8 1.4-3.4 4.1-3.4 2 0 3.5.9 4.3 2.3l-2.1 1.5z"/></svg>
+                </div>
+                <span class="skill-name">JavaScript</span>
+              </div>
+
+              <!-- React.js -->
+              <div class="skill-card">
+                <div class="skill-icon-wrap" style="background: rgba(0, 216, 255, 0.1); color: #00D8FF;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="2"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12a15.3 15.3 0 0 1 10-4 15.3 15.3 0 0 1 10 4 15.3 15.3 0 0 1-10 4 15.3 15.3 0 0 1-10-4z"/></svg>
+                </div>
+                <span class="skill-name">React.js</span>
+              </div>
+
+              <!-- Node.js -->
+              <div class="skill-card">
+                <div class="skill-icon-wrap" style="background: rgba(51, 153, 51, 0.1); color: #339933;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.414l9.167 5.25v10.672L12 22.586l-9.167-5.25V6.664L12 1.414zm0 2.302L5.167 7.712v8.576L12 20.284l6.833-3.996V7.712L12 3.716z"/></svg>
+                </div>
+                <span class="skill-name">Node.js</span>
+              </div>
+
+              <!-- Express.js -->
+              <div class="skill-card">
+                <div class="skill-icon-wrap" style="background: rgba(120, 120, 120, 0.1); color: #888888;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg>
+                </div>
+                <span class="skill-name">Express.js</span>
+              </div>
+
+              <!-- MongoDB -->
+              <div class="skill-card">
+                <div class="skill-icon-wrap" style="background: rgba(71, 162, 72, 0.1); color: #47A248;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-.5 0-1 .4-1.2 1 .3.4 1 2.3 1 3.5C11.8 11.5 6 12.8 6 16.5 6 20 8.7 24 12 24s6-4 6-7.5c0-3.7-5.8-5-5.8-12 0-1.2.7-3.1 1-3.5-.2-.6-.7-1-1.2-1z"/></svg>
+                </div>
+                <span class="skill-name">MongoDB</span>
+              </div>
+
+              <!-- MySQL -->
+              <div class="skill-card">
+                <div class="skill-icon-wrap" style="background: rgba(0, 117, 143, 0.1); color: #00758F;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c5.523 0 10 1.79 10 4s-4.477 4-10 4S2 8.21 2 6s4.477-4 10-4zm0 6c5.523 0 10 1.79 10 4s-4.477 4-10 4S2 14.21 2 12s4.477-4 10-4zm0 6c5.523 0 10 1.79 10 4s-4.477 4-10 4S2 20.21 2 18s4.477-4 10-4z"/></svg>
+                </div>
+                <span class="skill-name">MySQL</span>
+              </div>
+
+              <!-- Git & GitHub -->
+              <div class="skill-card">
+                <div class="skill-icon-wrap" style="background: rgba(240, 80, 50, 0.1); color: #F05032;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.3 10.9L13.1.7C12.7.3 12 .3 11.6.7L8.7 3.6l3 3c.6-.2 1.3 0 1.8.5.5.5.7 1.2.5 1.8l3 3c.6-.2 1.3 0 1.8.5.7.7.7 1.8 0 2.5s-1.8.7-2.5 0c-.5-.5-.7-1.2-.5-1.8l-3-3c-.2.2-.5.3-.8.3-.3 0-.6-.1-.8-.3l-3 3c.2.6 0 1.3-.5 1.8-.7.7-1.8.7-2.5 0s-.7-1.8 0-2.5c.5-.5 1.2-.7 1.8-.5l3-3L8.7 8.1l-7 7c-.4.4-.4 1 0 1.4l10.2 10.2c.4.4 1 .4 1.4 0l10.2-10.2c.3-.4.3-1-.2-1.4z"/></svg>
+                </div>
+                <span class="skill-name">Git &amp; GitHub</span>
+              </div>
+
+              <!-- Responsive Design -->
+              <div class="skill-card">
+                <div class="skill-icon-wrap" style="background: rgba(37, 99, 235, 0.1); color: #2563EB;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                </div>
+                <span class="skill-name">Responsive Design</span>
+              </div>
+
+              <!-- Accessibility -->
+              <div class="skill-card">
+                <div class="skill-icon-wrap" style="background: rgba(147, 51, 234, 0.1); color: #9333EA;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+                </div>
+                <span class="skill-name">Accessibility (WCAG 2.1)</span>
+              </div>
+
+              <!-- SEO Best Practices -->
+              <div class="skill-card">
+                <div class="skill-icon-wrap" style="background: rgba(13, 148, 136, 0.1); color: #0D9488;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </div>
+                <span class="skill-name">SEO Best Practices</span>
+              </div>
+
+            </div>
+          </div>
+          
+          <!-- Right Column: Tools & Technologies & Resume -->
+          <div>
+            <div class="tools-box">
+              <h2 class="h3" style="font-weight: 700;">Tools &amp; Technologies</h2>
+              <ul class="tools-list">
+                <li>VS Code</li>
+                <li>Postman</li>
+                <li>Figma</li>
+                <li>Netlify</li>
+                <li>Vercel</li>
+                <li>Chrome DevTools</li>
+              </ul>
+            </div>
+
+            <!-- Resume Download Card -->
+            <div class="resume-box">
+              <div>
+                <h3>Resume</h3>
+                <p>Download my resume to know more about my education, skills and experience.</p>
+              </div>
+              <a href="#" class="btn btn-resume" aria-label="Download Darpan Simhadri resume as PDF (placeholder)">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 4px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download Resume PDF
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" aria-hidden="true">
+
+    <!-- Education Section -->
+    <section class="section-sm" aria-labelledby="edu-heading">
+      <div class="container">
+        <h2 id="edu-heading" class="section-title">Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>B.Tech in Computer Science Engineering</h3>
+            <span>2024 – Present</span>
+            <p>Comprehensive training in data structures, design patterns, backend integration, web accessibility standards, and modern Javascript application layers.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Responsive Web Design Certification</h3>
+            <span>2023</span>
+            <p>Mastered CSS grid systems, responsive frameworks layout design, fluid sizing structures, and mobile-first workflow practices.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" aria-hidden="true">
+
+    <!-- Achievements Section -->
+    <section class="section-sm" aria-labelledby="achievements-heading">
+      <div class="container">
+        <h2 id="achievements-heading" class="section-title">Achievements</h2>
+        <div class="achievement-list">
+          
+          <div class="achievement">
+            <div class="achievement-icon" aria-hidden="true">🏆</div>
+            <div>
+              <h3>Lighthouse Score 100 — Accessibility &amp; SEO</h3>
+              <p>Achieved perfect Lighthouse Accessibility and SEO scores on the Sri Venkata Padmavathi Traders website through rigorous semantic markup and metadata practices.</p>
+            </div>
+          </div>
+          
+          <div class="achievement">
+            <div class="achievement-icon" aria-hidden="true">♿</div>
+            <div>
+              <h3>WCAG 2.2 AA Compliant Portfolio</h3>
+              <p>All five portfolio pages pass keyboard navigation, screen-reader landmark and colour contrast requirements under WCAG 2.2 Level AA guidelines.</p>
+            </div>
+          </div>
+          
+          <div class="achievement">
+            <div class="achievement-icon" aria-hidden="true">📦</div>
+            <div>
+              <h3>Three Production-Ready Projects</h3>
+              <p>Delivered CampusOS, the Expense Tracker and the Traders website — each with clean source control history, README documentation and audit evidence.</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <p class="footer-brand">DS<span>.</span> Darpan Simhadri</p>
+          <p class="footer-tagline">Computer Science Engineer</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Darpan Simhadri. All rights reserved.</p>
+        <p>Built with ❤️ using HTML5, CSS3 &amp; JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

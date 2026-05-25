@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home │ Darpan Simhadri Portfolio</title>
+  <meta name="description" content="Darpan Simhadri — Computer Science Engineer building accessible, responsive web experiences with semantic HTML5 and modern front-end practices.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Home │ Darpan Simhadri Portfolio">
+  <meta property="og:description" content="Accessible portfolio of Darpan Simhadri, Computer Science Engineer.">
+  <meta property="og:type" content="website">
+  
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('theme');
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,400;0,500;0,700;1,400&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Skip to main content -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ── HEADER ─────────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Darpan Simhadri – Home">DS<span>Darpan Simhadri</span></a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Open navigation">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true" focusable="false">
+          <rect y="4"  width="22" height="2" rx="1" fill="currentColor"/>
+          <rect y="10" width="22" height="2" rx="1" fill="currentColor"/>
+          <rect y="16" width="22" height="2" rx="1" fill="currentColor"/>
+        </svg>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ── MAIN ───────────────────────────────────────────────── -->
+  <main id="main-content" tabindex="-1">
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-text">
+            <span class="badge-capsule">Computer Science Engineer</span>
+            <h1 id="hero-heading">Hi, I'm Darpan<br><span class="gradient-text">Simhadri</span></h1>
+            <p class="hero-desc">Aspiring Full Stack Developer passionate about building accessible, inclusive and user-friendly web applications.</p>
+            <div class="hero-actions">
+              <a href="projects.html" class="btn btn-primary">View My Work <span aria-hidden="true">&gt;</span></a>
+              <a href="contact.html" class="btn btn-outline">
+                Contact Me
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" style="margin-left: 4px;">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          
+          <div class="hero-avatar-container">
+            <div class="hero-avatar-wrapper">
+              <img src="assets/images/darpan_profile.png" alt="Portrait of Darpan Simhadri">
+            </div>
+          </div>
+        </div>
+        
+        <div class="scroll-indicator" aria-hidden="true">
+          <div class="scroll-mouse">
+            <div class="scroll-wheel"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Highlights -->
+    <section class="section-sm" aria-labelledby="highlights-heading">
+      <div class="container">
+        <h2 id="highlights-heading" class="visually-hidden">Core Competencies</h2>
+        <div class="highlights-grid">
+          
+          <div class="highlight-card">
+            <div class="highlight-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 8v8"/>
+                <path d="M8 12h8"/>
+              </svg>
+            </div>
+            <h3>Accessible</h3>
+            <p>WCAG 2.1 Compliant practices built from day one.</p>
+          </div>
+
+          <div class="highlight-card">
+            <div class="highlight-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10 9 9 9 8 9"/>
+              </svg>
+            </div>
+            <h3>Semantic</h3>
+            <p>HTML5 Best Practices with clear, clean structures.</p>
+          </div>
+
+          <div class="highlight-card">
+            <div class="highlight-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </div>
+            <h3>Performance</h3>
+            <p>Optimized &amp; Fast, loading instantly for any user.</p>
+          </div>
+
+          <div class="highlight-card">
+            <div class="highlight-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              </svg>
+            </div>
+            <h3>SEO Friendly</h3>
+            <p>Search Engine Ready with clean metadata structures.</p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="section featured-strip" aria-labelledby="featured-heading">
+      <div class="container">
+        <h2 id="featured-heading" class="section-title">Featured Projects</h2>
+        <div class="card-grid">
+
+          <article class="card project-card" aria-labelledby="proj-1-title">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project_campusos.png" alt="CampusOS project screenshot mockup">
+            </div>
+            <div class="project-body">
+              <h3 id="proj-1-title">CampusOS</h3>
+              <p>A campus management platform designed to streamline scheduling, resources and student services through a clean, accessible interface.</p>
+              <div class="tags" aria-label="Technologies used">
+                <span class="tag">ReactJS</span>
+                <span class="tag">Tailwind CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="card-footer">
+                <a href="projects.html#campusos" class="btn btn-ghost" aria-label="View CampusOS project details">View CampusOS Project →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card" aria-labelledby="proj-2-title">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project_tracker.png" alt="Smart Daily Expense and Habit Tracker screenshot mockup">
+            </div>
+            <div class="project-body">
+              <h3 id="proj-2-title">Smart Daily Expense &amp; Habit Tracker</h3>
+              <p>A personal productivity tool for logging daily expenses and habits, with accessible data visualisations and keyboard-friendly controls.</p>
+              <div class="tags" aria-label="Technologies used">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="card-footer">
+                <a href="projects.html#expense-tracker" class="btn btn-ghost" aria-label="View Smart Daily Expense and Habit Tracker project details">View Expense Tracker Project →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card" aria-labelledby="proj-3-title">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project_traders.png" alt="Sri Venkata Padmavathi Traders website screenshot mockup">
+            </div>
+            <div class="project-body">
+              <h3 id="proj-3-title">Sri Venkata Padmavathi Traders Website</h3>
+              <p>A professional business website for a local trading company featuring a product catalogue, contact form and mobile-responsive layout.</p>
+              <div class="tags" aria-label="Technologies used">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">Semantic Structure</span>
+              </div>
+              <div class="card-footer">
+                <a href="projects.html#svpt" class="btn btn-ghost" aria-label="View Sri Venkata Padmavathi Traders Website project details">View Traders Website Project →</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <p class="text-center mt-2">
+          <a href="projects.html" class="btn btn-outline" style="border-radius: 999px;">See All Projects</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- CTA Band -->
+    <section class="section-sm" aria-labelledby="cta-heading">
+      <div class="container text-center">
+        <h2 id="cta-heading" class="section-title">Let's Work Together</h2>
+        <p class="lead" style="margin-bottom:2.5rem">Interested in collaborating or have a project in mind? I'd love to hear from you.</p>
+        <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <p class="footer-brand">DS<span>.</span> Darpan Simhadri</p>
+          <p class="footer-tagline">Computer Science Engineer</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Darpan Simhadri. All rights reserved.</p>
+        <p>Built with ❤️ using HTML5, CSS3 &amp; JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
